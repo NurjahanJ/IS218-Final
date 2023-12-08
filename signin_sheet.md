@@ -22,5 +22,5 @@
 | Wed, Nov 29|           |     X      |
 | Fri, Dec 1 |  Canceled         |   Canceled        |
 | Wed, Dec 6 |     X     |     X      |
-| Fri, Dec 8 |           |           |
+| Fri, Dec 8 |      X    |           |
 | Wed, Dec 13|           |           |
