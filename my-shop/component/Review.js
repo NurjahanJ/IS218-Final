@@ -1,7 +1,7 @@
 import React from "react";
-import { Card, CardHeader, CardBody, CardFooter, Divider, Link, Image } from "@nextui-org/react";
+import { Card, CardHeader, CardBody, Divider, Link, Image } from "@nextui-org/react";
 
-export default function App() {
+export default function Review() {
     return (
         <div className="flex gap-4">
             <Card className="max-w-[400px]">
