@@ -6,7 +6,7 @@ export default function App() {
         <div className="flex gap-4">
             <Card className="max-w-[400px]">
                 <CardHeader className="flex gap-3">
-                    <Image
+                    <Image src="/images/review1.jpg"
                         alt="User Logo"
                         height={40}
                         radius="sm"
@@ -26,7 +26,7 @@ export default function App() {
             </Card>
             <Card className="max-w-[400px]">
                 <CardHeader className="flex gap-3">
-                    <Image
+                    <Image src="/images/review2.jpg"
                         alt="User Logo"
                         height={40}
                         radius="sm"
@@ -46,7 +46,7 @@ export default function App() {
             </Card>
             <Card className="max-w-[400px]">
                 <CardHeader className="flex gap-3">
-                    <Image
+                    <Image src="review3.jpg"
                         alt="User Logo"
                         height={40}
                         radius="sm"
