@@ -1,41 +1,28 @@
-import React from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
-import {AcmeLogo} from "./AcmeLogo.jsx";
+import React from 'react';
+import { Navbar, Text, Link } from '@nextui-org/react';
+import Image from 'next/image';
+import {Logo} from "../public/images/Logo.jpg";
 
-export default function App() {
+const HomeNavbar = () => {
   return (
-    <Navbar>
-      <NavbarBrand>
-        <AcmeLogo />
-        <p className="font-bold text-inherit">ACME</p>
-      </NavbarBrand>
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Features
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page">
-            Customers
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Integrations
-          </Link>
-        </NavbarItem>
-      </NavbarContent>
-      <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            Sign Up
-          </Button>
-        </NavbarItem>
-      </NavbarContent>
+    <Navbar isBordered variant="sticky">
+      <Navbar.Brand>
+        <Image
+          src={Logo}
+          alt="Wander Glow Candles"
+          width={50}
+          height={50}
+        />
+        <Text b color="inherit" hideIn="xs">
+          Wander Glow
+        </Text>
+      </Navbar.Brand>
+      <Navbar.Content hideIn="xs" variant="underline">
+        <Navbar.Link href="#candles">Candles</Navbar.Link>
+        <Navbar.Link href="#cart">Cart</Navbar.Link>
+      </Navbar.Content>
     </Navbar>
   );
-}
+};
+
+export default HomeNavbar;
