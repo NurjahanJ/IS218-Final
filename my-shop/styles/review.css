@@ -1,0 +1,73 @@
+.review-container {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .reviews-header {
+    font-size: 3rem;
+    color: #4B0082;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .review-flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* This creates space between the cards */
+    justify-content: center; /* This will center the cards in the container */
+    flex-wrap: wrap; /* This allows cards to wrap to the next line on small screens */
+  }
+  
+  .review-card {
+    width: 100%;
+    max-width: 400px;
+    border: none;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    transition: transform 0.3s ease;
+  }
+  
+  .review-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-header {
+    display: flex;
+    align-items: center; /* Centers the items vertically */
+    gap: 20px; /* Adjust gap between image and text */
+    padding: 5px; /* Add padding inside the header */
+  }
+  
+  .card-header .flex {
+    justify-content: center; /* Centers the flex items vertically */
+    align-items: flex-start;
+  }
+  
+  .card-body {
+    padding: 20px;
+    text-align: right;
+  }
+  
+  .rating {
+    color: #000000; /* Adjust the star rating color if needed */
+    font-size: 1rem; /* Adjust the star size if needed */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; /* Space below the stars */
+  }
+  
+  .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 2%;
+    text-align: center;
+  }
+  
+  .content {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #000000;
+    text-align: center;
+  }
+  

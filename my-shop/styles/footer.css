@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%; /* Adjust the padding to match the design */
+}
+
+.footer-section {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+footer img {
+  width: 100px; /* Adjust the logo size as needed */
+}
+
+h2 {
+  margin-bottom: 10px; /* Space between the header and links */
+  color: #333; /* Dark grey color for text */
+  font-size: 1.2rem; /* Adjust the font size as needed */
+}
+
+.Link {
+  color: #333; /* Dark grey color for links */
+  margin-bottom: 5px; /* Space between links */
+  text-decoration: none; /* No underline for links */
+  font-size: 1rem; /* Adjust the font size as needed */
+}
+
+
+/* Remove the absolute positioning from the footer text */
+.footer-text {
+  text-align: center;
+  color: white; /* Dark grey color for text */
+  font-size: 1.6rem; /* Adjust the font size as needed */
+  background-color: #008080; /* Teal color */
+  height: 50%; /* Adjust the height as needed */
+  width: 100%; /* Full width */
+  font-family: 'Raleway', sans-serif;
+}
+
+  
