@@ -15,7 +15,7 @@ export default function Footer() {
         <div>
             <h2>Customer Care</h2>
           <Link href="/contact" >Contact Us</Link>
-          <Link href="/faqs">FAQs</Link>
+          <Link href="./faq">FAQs</Link>
         </div>
 
         <div>
