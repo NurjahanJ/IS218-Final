@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+.main-banner {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space between the image and the text */
+  padding: 2rem; /* Padding around the content */
+}
+
+.main-banner h1 {
+  color: #4B0082; /* Purple text color for the heading */
+  padding-left: 3%;
+  font-weight: 900;
+  font-size: 5.4rem; /* Larger font size for the heading */
+  margin-bottom: 1rem; /* Space between the heading and button */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-banner button {
+    background-color: #FFD700; /* Yellow background for the button */
+    color: #000000; /* Text color for the button */
+    font-weight: bold; /* Bold font weight for the button text */
+    padding: 1rem 2rem; /* Padding inside the button */
+    border: none; /* No border for the button */
+    border-radius: 10px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for the button */
+    margin-left: 3%; /* Match the left alignment with the heading */
+    font-size: 1rem; /* Set font size for button text */
+    text-transform: uppercase; /* Optional: transform text to uppercase */
+    outline: none; /* Remove outline to maintain style on focus */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-banner {
+    flex-direction: column; /* Stack the items on small screens */
+  }
+
+  .main-banner img {
+    margin-bottom: 1rem; /* Space between the image and the text on small screens */
+  }
+}

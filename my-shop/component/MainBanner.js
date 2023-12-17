@@ -1,19 +1,18 @@
 import { Button } from "@nextui-org/react";
+import '../styles/mainbanner.css'; 
 
 export default function MainBanner() {
-    return (
-      <div >
-        <div>
-          <img src='/images/homepage-image.jpg'
-            alt="homepage-image"
-            width={523}
-            height={523}
-          />
-        </div>
-        <div>
-          <h1>Embrace Ambiance with Wander Glow</h1>
-          <Button> Browse Candles </Button>
-        </div>
+  return (
+    <div className="main-banner">
+      <img src='/images/homepage-image.jpg'
+        alt="homepage-image"
+        width={500}
+        height={500}
+      />
+      <div>
+        <h1>Embrace Ambiance with Wander Glow</h1>
+        <Button className="browse-button"> Browse Candles </Button>
       </div>
-    );
-  }
+    </div>
+  );
+}
