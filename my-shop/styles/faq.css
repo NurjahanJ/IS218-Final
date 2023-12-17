@@ -1,0 +1,34 @@
+/* faqs.css */
+body {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    max-width: 800px; /* Adjust the max-width as per your design */
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 3rem; /* Large font size for the main heading */
+    color: #4B0082; /* Dark teal color */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center the heading if that matches your design */
+    font-weight: bold;
+  }
+  
+  p.question {
+    font-weight: bold; /* Bold for question text */
+    color: black; /* Dark teal color to highlight the question */
+  }
+  
+  /* Style for the answer text if needed */
+  p.answer {
+    padding-left: 20px; /* Indent answers for readability */
+  }
+  
+  
