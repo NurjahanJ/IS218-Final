@@ -1,0 +1,37 @@
+.subscription {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .subscription h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Example color, adjust as needed */
+    font-weight: bold;
+  }
+  
+  .subscription input {
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    width: 80%; /* Adjust width as needed */
+    max-width: 400px; /* Adjust max-width as needed */
+    background-color: #E2725B1A;
+    border-radius: 12px;
+  }
+  
+  .subscription button {
+    padding: 10px 15px;
+    background-color: #00808026; /* Adjust background color to match the design */
+    color: #008080;
+    border-radius: 12px;
+  }
+  
+    
+    /* Responsive adjustments for smaller screens */
+    @media (max-width: 768px) {
+      .subscription input,
+      .subscription button {
+        width: 80%; /* Increase the width of input and button on small screens */
+      }
+    }
+    

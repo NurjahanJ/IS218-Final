@@ -1,4 +1,5 @@
 import { Input, Button } from "@nextui-org/react";
+import '../styles/subscription.css'
 
 export default function Subscription() {
   return (
