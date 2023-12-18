@@ -7,13 +7,12 @@
 .logo {
   display: flex;
   justify-content: space-between; /* This spreads out the logo and nav items */
-  align-items: center; /* This centers the items vertically */
   padding: 1rem 3%; /* Adjust padding to match design and remove top padding */
 }
 
 /* Styles for navbar items to match the design */
 .nav-link {
-  color: #008080; /* Adjust the color to match your design, assumed purple here */
+  color: #008080; 
   font-size: 1.2rem; /* Adjust the font size as needed */
   font-weight: bold; /* For bold text */
   margin-right: 1rem; /* Add space to the right of each nav item */
