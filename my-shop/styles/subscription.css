@@ -7,6 +7,7 @@
     font-size: 25px;
     margin-bottom: 20px;
     font-weight: bold;
+    color: black;
   }
   
   .subscription input {
@@ -21,10 +22,8 @@
   .subscription button {
     padding: 10px 10px;
     background-color: #00808026; 
-    color: #008080;
+    color: #ffffff;
     border-radius: 12px;
-    width: 100px;
-
   }
   
     
