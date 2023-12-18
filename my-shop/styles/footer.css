@@ -47,13 +47,13 @@ h2 {
 /* Modal Content Styles */
 .ModalContent {
   background-color: #006666; /* Dark teal background */
-  color: #ffffff; /* White text color */
   text-align: center; /* Center align the text */
   border-radius: 10px; /* Rounded corners for the modal */
 }
 
 .ModalHeader {
 color: white;
+text-align: center;
 }
 
 
@@ -63,7 +63,7 @@ color: white;
 
 /* Link Styles */
 .Link {
-  color: #ffffff; /* White text color for links */
+  color: black; /* White text color for links */
   font-weight: bold; /* Make link text bold */
 }
 
