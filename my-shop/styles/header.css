@@ -31,4 +31,29 @@
   margin-right: 1rem; /* Adjust the right margin as needed */
 }
 
+.px-1 {
+  /* Padding on the X-axis */
+  padding-left: 0.25rem; /* You might need to adjust this value */
+  padding-right: 0.25rem; /* You might need to adjust this value */
+}
 
+.py-2 {
+  /* Padding on the Y-axis */
+  padding-top: 0.5rem; /* You might need to adjust this value */
+  padding-bottom: 0.5rem; /* You might need to adjust this value */
+}
+
+.text-small {
+  /* Font size for small text */
+  font-size: 0.875rem; /* You might need to adjust this value */
+}
+
+.font-bold {
+  /* Bold text */
+  font-weight: bold;
+}
+
+.text-tiny {
+  /* Font size for tiny text */
+  font-size: 0.75rem; /* You might need to adjust this value */
+}
