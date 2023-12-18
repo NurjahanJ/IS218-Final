@@ -17,7 +17,7 @@ export default function Footer() {
 
         <div className="footer-section">
           <h2><strong>Customer Care</strong></h2>
-          <Link href="/contact" className="Link">Contact Us</Link>
+          <Link href="#" className="Link" onClick={openModal}>Contact Us</Link>
           <Link href="/faq" className="Link">FAQs</Link>
         </div>
 
@@ -25,6 +25,21 @@ export default function Footer() {
           <Subscription />            
         </div>
       </footer>
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <ModalContent>
+          <ModalHeader className="flex flex-col gap-1">Contact Us</ModalHeader>
+          <ModalBody>
+            <p>
+            Address: Wander Glow Headquarters 123 Candlelight Avenue Somerville, NJ 08876 United States Email: wanderglow@gmail.com Phone: 973-555-1234
+            </p>
+          </ModalBody>
+          <ModalFooter>
+            <Button color="primary" variant="light" onClick={closeModal}>
+              Close
+            </Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
       <div className="footer-text">
         <p>&copy; 2023 All Rights Reserved | Wander Glow</p>
       </div>
