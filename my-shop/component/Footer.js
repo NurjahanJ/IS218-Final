@@ -4,6 +4,15 @@ import Subscription from './Subscription';
 import '../styles/footer.css'
 
 export default function Footer() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   return (
     <>
       <footer>
