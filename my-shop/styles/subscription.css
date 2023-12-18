@@ -18,6 +18,9 @@
   background-color: #E2725B1A; /* Added a border to match the design */
   border-radius: 12px;
   color: #000000; /* Text color for the input */
+  border: none; /* Removes any border */
+  box-shadow: none; /* Removes any shadow */
+  outline: none; /* Removes the outline when the input is focused */
 }
 
 .subscription button {
