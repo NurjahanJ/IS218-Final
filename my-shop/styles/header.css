@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: start; /* Center logo vertically */
-  padding: 0.5rem 1%; /* Adjust vertical padding */
+  padding: 0.5rem; /* Adjust vertical padding */
   margin-right: 60%;
 }
 
