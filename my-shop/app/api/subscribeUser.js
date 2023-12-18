@@ -1,4 +1,3 @@
-// pages/api/subscribeUser.js
 import fetch from 'isomorphic-unfetch';
 
 export default async (req, res) => {
