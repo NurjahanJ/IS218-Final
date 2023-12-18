@@ -11,7 +11,6 @@ footer {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  color: black;
 }
 
 footer img {
@@ -41,30 +40,6 @@ h2 {
   height: 50%; /* Adjust the height as needed */
   width: 100%; /* Full width */
   font-family: 'Raleway', sans-serif;
-}
-
-
-/* Modal Content Styles */
-.ModalContent {
-  background-color: #006666; /* Dark teal background */
-  text-align: center; /* Center align the text */
-  border-radius: 10px; /* Rounded corners for the modal */
-}
-
-.ModalHeader {
-color: white;
-text-align: center;
-}
-
-
-.ModalBody {
-  padding: 20px; /* Add padding to the body content */
-}
-
-/* Link Styles */
-.Link {
-  color: black; /* White text color for links */
-  font-weight: bold; /* Make link text bold */
 }
 
 /* Responsive adjustments for footer on mobile view */

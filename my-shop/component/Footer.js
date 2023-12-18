@@ -33,17 +33,25 @@ export default function Footer() {
           <Subscription />            
         </div>
       </footer>
-      <Modal isOpen={isModalOpen} onClose={closeModal} className="ModalContent">
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
         <ModalContent>
-          <ModalHeader className="ModalHeader">Contact Us</ModalHeader>
-          <ModalBody className="ModalBody">
-            <p>Address: Wander Glow Headquarters 123 Candlelight Avenue Somerville, NJ 08876 United States</p>
-            <p>Email: wanderglow@gmail.com</p>
-            <p>Phone: 973-555-1234</p>
+          <ModalHeader className="flex flex-col gap-1">Contact Us</ModalHeader>
+          <ModalBody>
+            <p>
+            Address: Wander Glow Headquarters 123 Candlelight Avenue Somerville, NJ 08876 United States
+            </p>
+            <p>
+            Email: wanderglow@gmail.com
+            </p>
+            <p>
+            Phone: 973-555-1234
+            </p>
           </ModalBody>
-            <ModalFooter className="ModalFooter">
-              <Button color="white" variant="light" onClick={closeModal} className="Button">Close</Button>
-            </ModalFooter>
+          <ModalFooter>
+            <Button color="primary" variant="light" onClick={closeModal}>
+              Close
+            </Button>
+          </ModalFooter>
         </ModalContent>
       </Modal>
       <div className="footer-text">
