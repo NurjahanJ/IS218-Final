@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from '@nextui-org/react';
+import React, { useState } from 'react';
+import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, Link } from '@nextui-org/react';
 import Subscription from './Subscription';
 import '../styles/footer.css'
 
@@ -39,7 +39,13 @@ export default function Footer() {
           <ModalHeader className="flex flex-col gap-1">Contact Us</ModalHeader>
           <ModalBody>
             <p>
-            Address: Wander Glow Headquarters 123 Candlelight Avenue Somerville, NJ 08876 United States Email: wanderglow@gmail.com Phone: 973-555-1234
+            Address: Wander Glow Headquarters 123 Candlelight Avenue Somerville, NJ 08876 United States
+            </p>
+            <p>
+            Email: wanderglow@gmail.com
+            </p>
+            <p>
+            Phone: 973-555-1234
             </p>
           </ModalBody>
           <ModalFooter>
