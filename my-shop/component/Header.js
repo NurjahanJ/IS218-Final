@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link } from "@nextui-org/react";
+import { Popover, PopoverTrigger, PopoverContent, Button } from "@nextui-org/react";
 import '../styles/header.css'; 
 
 export default function Header() {
@@ -19,10 +20,20 @@ export default function Header() {
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="#" className="nav-link">
-            Cart
-          </Link>
-        </NavbarItem>
+            <Popover placement="bottom" showArrow={true}>
+              <PopoverTrigger>
+                <Link href="#" className="nav-link">
+                  Cart
+                </Link>
+              </PopoverTrigger>
+              <PopoverContent>
+                <div className="px-1 py-2">
+                  <div className="text-small font-bold">Cart</div>
+                  <div className="text-tiny">Your cart is currently empty.</div>
+                </div>
+              </PopoverContent>
+            </Popover>
+          </NavbarItem>
       </NavbarContent>
       </NavbarBrand>
 
