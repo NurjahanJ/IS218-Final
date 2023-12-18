@@ -1,49 +1,64 @@
 import React, { useState } from 'react';
+import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, Link } from '@nextui-org/react';
+import Subscription from './Subscription';
+import '../styles/footer.css'
 
-function Subscription() {
-  const [email, setEmail] = useState('');
+export default function Footer() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    
-    // Construct the subscription URL
-    const subscriptionUrl = '/api/subscribeUser'; 
-
-    try {
-      const response = await fetch(subscriptionUrl, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email }),
-      });
-
-      const data = await response.json();
-      if (response.ok) {
-        // Handle success - maybe clear the form or show a success message
-        console.log('Subscription successful:', data.message);
-      } else {
-        // Handle errors - show error message to the user
-        console.error('Subscription error:', data.error);
-      }
-    } catch (error) {
-      // Catch any network errors and log them
-      console.error('Network error:', error);
-    }
+  const openModal = () => {
+    setIsModalOpen(true);
   };
 
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="email"
-        placeholder="Enter your email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        required
-      />
-      <button type="submit">Subscribe</button>
-    </form>
+    <>
+      <footer>
+        <img src="/images/Logo.jpg" alt="Wander Glow Logo" />
+        
+        <div className="footer-section">
+          <h2><strong>Products</strong></h2>
+          <Link href="./candles" className="Link">Candles</Link>
+          <Link href="./candles" className="Link">Accessories</Link>
+        </div>
+
+        <div className="footer-section">
+          <h2><strong>Customer Care</strong></h2>
+          <Link href="#" className="Link" onClick={openModal}>Contact Us</Link>
+          <Link href="/faq" className="Link">FAQs</Link>
+        </div>
+
+        <div>
+          <Subscription />            
+        </div>
+      </footer>
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <ModalContent>
+          <ModalHeader className="flex flex-col gap-1">Contact Us</ModalHeader>
+          <ModalBody>
+            <p>
+            Address: Wander Glow Headquarters 123 Candlelight Avenue Somerville, NJ 08876 United States
+            </p>
+            <p>
+            Email: wanderglow@gmail.com
+            </p>
+            <p>
+            Phone: 973-555-1234
+            </p>
+          </ModalBody>
+          <ModalFooter>
+            <Button color="primary" variant="light" onClick={closeModal}>
+              Close
+            </Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
+      <div className="footer-text">
+        <p>&copy; 2023 All Rights Reserved | Wander Glow</p>
+      </div>
+      <div className="teal-bar"></div>
+    </>
   );
 }
-
-export default Subscription;
