@@ -13,16 +13,18 @@
     padding: 10px 15px;
     margin-bottom: 20px;
     width: 80%; /* Adjust width as needed */
-    max-width: 80%; /* Adjust max-width as needed */
+    max-width: 300px; /* Adjust max-width as needed */
     background-color: #E2725B1A;
     border-radius: 12px;
   }
   
   .subscription button {
-    padding: 10px 15px;
-    background-color: #00808026; /* Adjust background color to match the design */
+    padding: 10px 10px;
+    background-color: #00808026; 
     color: #008080;
     border-radius: 12px;
+    width: 100px;
+
   }
   
     
