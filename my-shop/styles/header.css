@@ -8,10 +8,11 @@
   justify-content: space-between;
   align-items: center; /* Center logo vertically */
   padding: 0.5rem 3%; /* Adjust vertical padding */
+  margin-right: 30%;
 }
 
 .nav-link {
-  color: white; /* If your text needs to be white */
+  color: #008080; /* If your text needs to be white */
   font-size: 1rem; /* Adjust the font size to match the design */
   font-weight: bold;
   margin-right: 0.5rem; /* Adjust right margin */
