@@ -21,7 +21,6 @@
 
 /* Use flexbox for NavbarContent to align items */
 .nav-content {
-  display: flex;
   justify-content: flex-end; /* Align nav items to the right */
   align-items: center; /* Align items vertically */
 }
