@@ -1,34 +1,31 @@
 .navbar-bg {
   background-color: #FFD700; /* Yellow background for the navbar */
-  margin-bottom: 1rem;
-  padding-bottom: 0rem;
+  margin-bottom: 0; /* Remove bottom margin if not needed */
 }
 
 .logo {
   display: flex;
-  justify-content: space-between; /* This spreads out the logo and nav items */
-  padding: 1rem 3%; /* Adjust padding to match design and remove top padding */
+  justify-content: space-between;
+  align-items: center; /* Center logo vertically */
+  padding: 0.5rem 3%; /* Adjust vertical padding */
 }
 
-/* Styles for navbar items to match the design */
 .nav-link {
-  color: #008080; 
-  font-size: 1.2rem; /* Adjust the font size as needed */
-  font-weight: bold; /* For bold text */
-  margin-right: 1rem; /* Add space to the right of each nav item */
+  color: white; /* If your text needs to be white */
+  font-size: 1rem; /* Adjust the font size to match the design */
+  font-weight: bold;
+  margin-right: 0.5rem; /* Adjust right margin */
 }
 
-/* Ensure NavbarContent uses flexbox to align items to the right */
 .nav-content {
   display: flex;
-  justify-content: flex-end; /* Align nav items to the right */
-  width: 100%; /* Ensure the content takes full width to push items to the edge */
+  justify-content: flex-end;
 }
 
-/* If you want to specifically target the "Candles" item for spacing */
 .NavbarItem:not(:last-child) {
-  margin-right: 1rem; /* Adjust the right margin as needed */
+  margin-right: 0.5rem; /* Adjust right margin */
 }
+
 
 .px-1 {
   /* Padding on the X-axis */
