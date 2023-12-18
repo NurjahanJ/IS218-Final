@@ -1,12 +1,12 @@
 /* Improved header styles for better alignment and spacing */
 .navbar-bg {
   background-color: #FFD700; /* Yellow background for the navbar */
+  display: flex; /* Use flexbox for direct children alignment */
+  justify-content: space-between; /* Space between logo and nav content */
+  align-items: center; /* Center items vertically */
 }
 
 .logo {
-  display: flex;
-  justify-content: flex-start; /* Align logo to the left */
-  align-items: center; /* Center items vertically */
   padding: 0.5rem 1rem; /* Adjust padding to your needs */
 }
 
@@ -19,12 +19,11 @@
   text-decoration: none; /* Remove underline from links */
 }
 
-/* Use flexbox for NavbarContent to align items to the right */
+/* Use flexbox for NavbarContent to align items */
 .nav-content {
   display: flex;
   justify-content: flex-end; /* Align nav items to the right */
   align-items: center; /* Align items vertically */
-  flex: 1; /* Allow the nav content to grow and use available space */
 }
 
 /* Target the NavbarItem for consistent spacing */
