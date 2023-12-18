@@ -34,7 +34,7 @@ h2 {
 /* Remove the absolute positioning from the footer text */
 .footer-text {
   text-align: center;
-  color: white; /* Dark grey color for text */
+  color: black; /* Dark grey color for text */
   font-size: 1.6rem; /* Adjust the font size as needed */
   background-color: #008080; /* Teal color */
   height: 50%; /* Adjust the height as needed */
@@ -59,20 +59,6 @@ color: white;
 .ModalBody {
   padding: 20px; /* Add padding to the body content */
 }
-
-.ModalFooter {
-  border-radius: 10px;
-  background-color: #ffffff;
-  color: #E2725B;
-}
-
-/* Button Styles */
-.Button {
-  background-color: #ffcc00; /* Yellow background for the button */
-  color: #000000; /* Black text color for the button */
-  border: none; /* Remove border */
-}
-
 
 /* Link Styles */
 .Link {

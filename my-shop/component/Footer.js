@@ -42,7 +42,7 @@ export default function Footer() {
             <p>Phone: 973-555-1234</p>
           </ModalBody>
             <ModalFooter className="ModalFooter">
-              <Button color="primary" variant="light" onClick={closeModal} className="Button">Close</Button>
+              <Button color="white" variant="light" onClick={closeModal} className="Button">Close</Button>
             </ModalFooter>
         </ModalContent>
       </Modal>
