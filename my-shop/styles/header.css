@@ -5,10 +5,10 @@
 
 .logo {
   display: flex;
-  justify-content: space-between;
+  justify-content:flex-start;
   align-items: center; /* Center logo vertically */
   padding: 0.5rem 3%; /* Adjust vertical padding */
-  margin-right: 50%;
+  margin-right: 60%;
 }
 
 .nav-link {
