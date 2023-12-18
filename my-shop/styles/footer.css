@@ -42,8 +42,6 @@ h2 {
   font-family: 'Raleway', sans-serif;
 }
 
-/* Existing styles... */
-
 /* Responsive adjustments for footer on mobile view */
 @media (max-width: 768px) {
   footer {

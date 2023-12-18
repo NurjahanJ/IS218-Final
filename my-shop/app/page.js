@@ -4,6 +4,7 @@ import Review from '@/component/Review'
 import MainBanner from '@/component/MainBanner'
 import Subscription from '@/component/Subscription'
 import Footer from '@/component/Footer'
+import CookieConsent from '@/component/cookie'
 
 export default function Page() {
   return (
@@ -13,6 +14,7 @@ export default function Page() {
       <Subscription />
       <Review />
       <Footer />
+      <CookieConsent />
     </div>
   )
 }
