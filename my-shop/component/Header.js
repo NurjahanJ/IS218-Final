@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <Navbar className="navbar-bg">
       <NavbarBrand className="logo">
-        <img src="/images/Logo.jpg" alt="Wander Glow Logo" width="80"/>
+        <img src="/images/Logo.jpg" alt="Wander Glow Logo" width="60"/>
         <NavbarContent className="nav-content">
         <NavbarItem>
           <Link href="./" className="nav-link">
