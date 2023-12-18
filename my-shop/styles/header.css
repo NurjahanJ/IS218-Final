@@ -1,54 +1,62 @@
-/* Improved header styles for better alignment and spacing */
 .navbar-bg {
   background-color: #FFD700; /* Yellow background for the navbar */
-  display: flex; /* Use flexbox for direct children alignment */
-  justify-content: space-between; /* Space between logo and nav content */
-  align-items: center; /* Center items vertically */
+  margin-bottom: 1rem;
+  padding-bottom: 0rem;
 }
 
 .logo {
-  padding: 0.5rem 1rem; /* Adjust padding to your needs */
+  display: flex;
+  justify-content: space-between; /* This spreads out the logo and nav items */
+  align-items: center; /* This centers the items vertically */
+  padding: 1rem 3%; /* Adjust padding to match design and remove top padding */
 }
 
-/* Styles for navbar items */
+/* Styles for navbar items to match the design */
 .nav-link {
-  color: #008080; /* Teal color for the nav links */
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 0.5rem; /* Add padding for clickable area */
-  text-decoration: none; /* Remove underline from links */
+  color: #008080; /* Adjust the color to match your design, assumed purple here */
+  font-size: 1.2rem; /* Adjust the font size as needed */
+  font-weight: bold; /* For bold text */
+  margin-right: 1rem; /* Add space to the right of each nav item */
 }
 
-/* Target the NavbarItem for consistent spacing */
+/* Ensure NavbarContent uses flexbox to align items to the right */
+.nav-content {
+  display: flex;
+  justify-content: flex-end; /* Align nav items to the right */
+  width: 100%; /* Ensure the content takes full width to push items to the edge */
+}
+
+/* If you want to specifically target the "Candles" item for spacing */
 .NavbarItem:not(:last-child) {
-  margin-right: 1rem; /* Space between nav items */
+  margin-right: 1rem; /* Adjust the right margin as needed */
 }
 
-/* Padding for the popover content */
 .px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
+  /* Padding on the X-axis */
+  padding-left: 0.25rem; /* You might need to adjust this value */
+  padding-right: 0.25rem; /* You might need to adjust this value */
 }
 
 .py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  /* Padding on the Y-axis */
+  padding-top: 0.5rem; /* You might need to adjust this value */
+  padding-bottom: 0.5rem; /* You might need to adjust this value */
 }
 
-/* Small text style for the cart popover */
 .text-small {
-  font-size: 0.875rem;
-  background-color: #008080; /* Teal background for the small text */
+  /* Font size for small text */
+  font-size: 0.875rem; /* You might need to adjust this value */
+  background-color: #008080;
   border-radius: 10px;
   color: white;
-  padding: 0.25rem 0.5rem; /* Padding inside the small text */
-  display: inline-block; /* Make the background only wrap the text */
 }
 
 .font-bold {
+  /* Bold text */
   font-weight: bold;
 }
 
 .text-tiny {
-  font-size: 0.75rem;
+  /* Font size for tiny text */
+  font-size: 0.75rem; /* You might need to adjust this value */
 }
