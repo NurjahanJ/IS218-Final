@@ -21,7 +21,6 @@ export default function Footer() {
         <div className="footer-section">
           <h2><strong>Products</strong></h2>
           <Link href="./candles" className="Link">Candles</Link>
-          <Link href="./candles" className="Link">Accessories</Link>
         </div>
 
         <div className="footer-section">
@@ -34,25 +33,17 @@ export default function Footer() {
           <Subscription />            
         </div>
       </footer>
-      <Modal isOpen={isModalOpen} onClose={closeModal}>
+      <Modal isOpen={isModalOpen} onClose={closeModal} className="ModalContent">
         <ModalContent>
-          <ModalHeader className="flex flex-col gap-1">Contact Us</ModalHeader>
-          <ModalBody>
-            <p>
-            Address: Wander Glow Headquarters 123 Candlelight Avenue Somerville, NJ 08876 United States
-            </p>
-            <p>
-            Email: wanderglow@gmail.com
-            </p>
-            <p>
-            Phone: 973-555-1234
-            </p>
+          <ModalHeader className="ModalHeader">Contact Us</ModalHeader>
+          <ModalBody className="ModalBody">
+            <p>Address: Wander Glow Headquarters 123 Candlelight Avenue Somerville, NJ 08876 United States</p>
+            <p>Email: wanderglow@gmail.com</p>
+            <p>Phone: 973-555-1234</p>
           </ModalBody>
-          <ModalFooter>
-            <Button color="primary" variant="light" onClick={closeModal}>
-              Close
-            </Button>
-          </ModalFooter>
+            <ModalFooter className="ModalFooter">
+              <Button color="primary" variant="light" onClick={closeModal} className="Button">Close</Button>
+            </ModalFooter>
         </ModalContent>
       </Modal>
       <div className="footer-text">

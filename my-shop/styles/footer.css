@@ -42,6 +42,44 @@ h2 {
   font-family: 'Raleway', sans-serif;
 }
 
+
+/* Modal Content Styles */
+.ModalContent {
+  background-color: #006666; /* Dark teal background */
+  color: #ffffff; /* White text color */
+  text-align: center; /* Center align the text */
+  border-radius: 10px; /* Rounded corners for the modal */
+}
+
+.ModalHeader {
+color: white;
+}
+
+
+.ModalBody {
+  padding: 20px; /* Add padding to the body content */
+}
+
+.ModalFooter {
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #E2725B;
+}
+
+/* Button Styles */
+.Button {
+  background-color: #ffcc00; /* Yellow background for the button */
+  color: #000000; /* Black text color for the button */
+  border: none; /* Remove border */
+}
+
+
+/* Link Styles */
+.Link {
+  color: #ffffff; /* White text color for links */
+  font-weight: bold; /* Make link text bold */
+}
+
 /* Responsive adjustments for footer on mobile view */
 @media (max-width: 768px) {
   footer {
