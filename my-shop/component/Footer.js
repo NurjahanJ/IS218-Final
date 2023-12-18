@@ -11,8 +11,8 @@ export default function Footer() {
         
         <div className="footer-section">
           <h2><strong>Products</strong></h2>
-          <Link href="/candles" className="Link">Candles</Link>
-          <Link href="/accessories" className="Link">Accessories</Link>
+          <Link href="./candles" className="Link">Candles</Link>
+          <Link href="./candles" className="Link">Accessories</Link>
         </div>
 
         <div className="footer-section">

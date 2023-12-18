@@ -42,4 +42,62 @@ h2 {
   font-family: 'Raleway', sans-serif;
 }
 
-  
+/* Existing styles... */
+
+/* Responsive adjustments for footer on mobile view */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px; /* Add space between sections when stacked */
+  }
+
+  footer img {
+    margin-bottom: 20px; /* Space between logo and footer content when stacked */
+  }
+}
+
+/* Responsive adjustments for a cleaner mobile view for the candle cards */
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr; /* One column for mobile screens */
+    gap: 10px; /* Reduced gap for mobile screens */
+  }
+
+  .candle-card {
+    border-radius: 5px; /* Smaller radius for mobile cards */
+  }
+
+  .candle-card-footer {
+    padding: 10px; /* Reduced padding for mobile cards */
+  }
+
+  .candle-card-footer b,
+  .candle-card-footer p {
+    font-size: 0.9em; /* Smaller font size for mobile cards */
+  }
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1rem; /* Smaller headers on mobile */
+  }
+
+  .Link {
+    font-size: 0.9rem; /* Smaller link text on mobile */
+  }
+
+  .footer-text {
+    font-size: 1.4rem; /* Smaller font size for footer text on mobile */
+    padding: 15px 0; /* Adjust padding for mobile footer text */
+  }
+}
+
+/* Apply Raleway font family globally */
+body, button, input, textarea {
+  font-family: 'Raleway', sans-serif;
+}

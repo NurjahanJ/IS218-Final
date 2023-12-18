@@ -14,7 +14,7 @@ export default function Header() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#" className="nav-link">
+          <Link href="./candles" className="nav-link">
             Candles
           </Link>
         </NavbarItem>
