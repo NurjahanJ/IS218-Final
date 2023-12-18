@@ -19,12 +19,6 @@
   text-decoration: none; /* Remove underline from links */
 }
 
-/* Use flexbox for NavbarContent to align items */
-.nav-content {
-  justify-content: flex-end; /* Align nav items to the right */
-  align-items: center; /* Align items vertically */
-}
-
 /* Target the NavbarItem for consistent spacing */
 .NavbarItem:not(:last-child) {
   margin-right: 1rem; /* Space between nav items */
