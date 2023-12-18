@@ -11,6 +11,7 @@ footer {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  color: black;
 }
 
 footer img {
@@ -34,7 +35,7 @@ h2 {
 /* Remove the absolute positioning from the footer text */
 .footer-text {
   text-align: center;
-  color: black; /* Dark grey color for text */
+  color: white; /* Dark grey color for text */
   font-size: 1.6rem; /* Adjust the font size as needed */
   background-color: #008080; /* Teal color */
   height: 50%; /* Adjust the height as needed */
