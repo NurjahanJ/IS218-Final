@@ -32,7 +32,9 @@
 }
 
 .px-1 {
-  /* Padding on the X-axis */
+  background-color: #008080;
+  border-radius: 8px;
+  color: white;
   padding-left: 0.25rem; /* You might need to adjust this value */
   padding-right: 0.25rem; /* You might need to adjust this value */
 }
