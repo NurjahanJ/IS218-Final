@@ -10,7 +10,7 @@ export default function FAQs() {
         <main>
           <h1>FAQs</h1>
           <p className="question">1. What are the different candle sizes available?</p>
-          <p className="answer">'Yes, our candles are crafted using high-quality, natural ingredients such as soy wax, essential oils, and cotton wicks. We prioritize natural materials to ensure a clean and eco-friendly burning experience.'</p>
+          <p className="answer">'We offer candles in various sizes, including small (4 oz), medium (8 oz), and large (12 oz) jars, providing options suitable for different preferences and spaces.'</p>
           
           <p className="question">2. Are your candles made with natural ingredients?</p>
           <p className="answer">'Yes, our candles are crafted using high-quality, natural ingredients such as soy wax, essential oils, and cotton wicks. We prioritize natural materials to ensure a clean and eco-friendly burning experience.'</p>
