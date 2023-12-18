@@ -5,7 +5,7 @@
 
 .logo {
   display: flex;
-  justify-content: center; /* Center logo and nav items horizontally */
+  justify-content: flex-start; /* Align logo to the left */
   align-items: center; /* Center items vertically */
   padding: 0.5rem 1rem; /* Adjust padding to your needs */
 }
@@ -19,13 +19,12 @@
   text-decoration: none; /* Remove underline from links */
 }
 
-/* Use flexbox for NavbarContent to align items */
+/* Use flexbox for NavbarContent to align items to the right */
 .nav-content {
   display: flex;
-  justify-content: center; /* Align nav items in the center */
+  justify-content: flex-end; /* Align nav items to the right */
   align-items: center; /* Align items vertically */
   flex: 1; /* Allow the nav content to grow and use available space */
-  padding-left: 2rem; /* Add some padding if the logo is separate from the nav items */
 }
 
 /* Target the NavbarItem for consistent spacing */
