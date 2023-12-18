@@ -19,6 +19,7 @@ export default function Header() {
             Candles
           </Link>
         </NavbarItem>
+
         <NavbarItem isActive>
             <Popover placement="bottom" showArrow={true}>
               <PopoverTrigger>
@@ -34,7 +35,9 @@ export default function Header() {
               </PopoverContent>
             </Popover>
           </NavbarItem>
-      </NavbarContent>
+
+        </NavbarContent>
+
       </NavbarBrand>
 
     </Navbar>
