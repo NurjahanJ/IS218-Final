@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 
 test('Candles page should render 12 cards', async ({ page }) => {
   // Navigate to the page where the Candles component is rendered
-  await page.goto('https://is-218-final-nu.vercel.app/candles'); // Replace with your actual URL
+  await page.goto('https://wander-glow.vercel.app/candles'); // Replace with your actual URL
   
   // Use a selector that matches your card elements
   const cardSelector = '.candle-card'; // This should be the class name or data attribute for your Card components
@@ -20,7 +20,7 @@ test('Candles page should render 12 cards', async ({ page }) => {
 
 test('CookieConsent component should have text and buttons', async ({ page }) => {
   // Navigate to the page where the CookieConsent component is rendered
-  await page.goto('https://is-218-final-nu.vercel.app/'); // Replace with your actual URL
+  await page.goto('https://wander-glow.vercel.app/'); // Replace with your actual URL
 
   // Check for the presence of the 'Cookie Policy' link
   await expect(page.locator('.cookie-consent a')).toHaveText('Cookie Policy');
@@ -35,7 +35,7 @@ test('CookieConsent component should have text and buttons', async ({ page }) =>
 
 test('FAQs page should render 10 questions and answers', async ({ page }) => {
   // Navigate to the page where the FAQs component is rendered
-  await page.goto('https://is-218-final-nu.vercel.app/faq'); // Replace with your actual URL
+  await page.goto('https://wander-glow.vercel.app/faq'); // Replace with your actual URL
   
   // Count the number of elements with the class 'question'
   const numberOfQuestions = await page.locator('.question').count();
@@ -53,7 +53,7 @@ test('FAQs page should render 10 questions and answers', async ({ page }) => {
 
 
 test('Footer should have a logo image', async ({ page }) => {
-  await page.goto('https://is-218-final-nu.vercel.app'); // Replace with your actual URL
+  await page.goto('https://wander-glow.vercel.app/'); // Replace with your actual URL
   const logo = page.locator('footer img[alt="Wander Glow Logo"]');
   await expect(logo).toBeVisible();
 });
@@ -61,18 +61,18 @@ test('Footer should have a logo image', async ({ page }) => {
 
 
 test('Footer should have specific text indicating copyright', async ({ page }) => {
-  await page.goto('https://is-218-final-nu.vercel.app'); // Replace with your actual URL
+  await page.goto('https://wander-glow.vercel.app/'); // Replace with your actual URL
   
   // Find the paragraph inside the div with the class 'footer-text'
   const footerText = page.locator('.footer-text p');
   
   // Check that the paragraph contains the specific text
-  await expect(footerText).toContainText('Â© 2023 All Rights Reserved | Wander Glow');
+  await expect(footerText).toContainText('© 2023 All Rights Reserved | Wander Glow');
 });
 
 
 test('Header should have "Home" and "Candles" links', async ({ page }) => {
-  await page.goto('https://is-218-final-nu.vercel.app'); // Replace with your actual URL
+  await page.goto('https://wander-glow.vercel.app/'); // Replace with your actual URL
   
   // Check for the "Home" link
   const homeLink = page.locator('text=Home').first();
@@ -85,7 +85,7 @@ test('Header should have "Home" and "Candles" links', async ({ page }) => {
 
 
 test('Cart popover in Header should display empty cart message', async ({ page }) => {
-  await page.goto('https://is-218-final-nu.vercel.app'); // Replace with your actual URL
+  await page.goto('https://wander-glow.vercel.app/'); // Replace with your actual URL
   
   // Trigger the cart popover to open, assuming there's a clickable element to do so
   await page.click('text=Cart');
@@ -105,7 +105,7 @@ test('Cart popover in Header should display empty cart message', async ({ page }
 
 
 test('MainBanner should have the correct heading and button', async ({ page }) => {
-  await page.goto('https://is-218-final-nu.vercel.app'); // Replace with your actual URL
+  await page.goto('https://wander-glow.vercel.app/'); // Replace with your actual URL
   
   // Verify the presence and content of the heading
   const heading = page.locator('h1 >> text=Embrace Ambiance with Wander Glow');
@@ -116,13 +116,13 @@ test('MainBanner should have the correct heading and button', async ({ page }) =
   await expect(browseButton).toBeVisible();
 
   await browseButton.click();
-  await expect(page.url()).toContain('https://is-218-final-nu.vercel.app/candles');
+  await expect(page.url()).toContain('https://wander-glow.vercel.app/candles');
 });
 
 
 
 test('ReviewSection should have 3 reviews each within a card', async ({ page }) => {
-  await page.goto('https://is-218-final-nu.vercel.app'); // Replace with your actual URL where ReviewSection is rendered
+  await page.goto('https://wander-glow.vercel.app/'); // Replace with your actual URL where ReviewSection is rendered
   
   // Locate the review cards
   const reviewCards = page.locator('.review-card');
