@@ -1,43 +1,50 @@
 .subscription {
   text-align: center;
   padding: 40px 20px; /* Increased top and bottom padding for a larger space */
-  background: #FFF8E7; /* Assuming this is the background color you want */
 }
 
 .subscription h2 {
   font-size: 25px;
-  margin-bottom: 20px; /* Adjusted space between heading and input */
+  margin-bottom: 20px; /* Space between heading and input */
   font-weight: bold;
-  color: #333; /* Changed to a darker color for better readability */
+  color: #333; /* Dark color for better readability */
+}
+
+.subscription form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center form elements */
 }
 
 .subscription input {
   padding: 15px 20px; /* Uniform padding for a cleaner look */
-  margin: 0 auto 20px auto; /* Centered margin with space at the bottom */
-  width: 300px; /* Fixed width for uniformity */
-  background-color: #E2725B1A; /* Added a border to match the design */
-  border-radius: 12px;
-  color: #000000; /* Text color for the input */
-  border: none; /* Removes any border */
+  margin-bottom: 20px; /* Space below the input field */
+  width: 80%; /* Responsive width */
+  max-width: 400px; /* Maximum width of the input field */
+  border-radius: 30px; /* Rounded corners for the input field */
+  color: #333; /* Text color for the input */
   box-shadow: none; /* Removes any shadow */
   outline: none; /* Removes the outline when the input is focused */
+  background-color:#E2725B;
 }
 
 .subscription button {
   padding: 15px 30px; /* More padding for a bigger button */
-  background-color: #00808026; /* Solid color for the button */
-  color: #008080; /* Text color for the button */
+  background-color: #00808026; /* Yellow background color for the button */
+  color: #008080; /* White text color for the button */
   border: none; /* Remove border */
-  border-radius: 12px;
-  font-weight: bold; /* Make button text bold */
+  border-radius: 30px; /* Rounded corners for the button */
+  font-weight: bold; /* Bold button text */
   box-shadow: none; /* Remove any default shadow */
+  cursor: pointer; /* Cursor to pointer to indicate clickable */
+  transition: background-color 0.3s ease; /* Transition for a hover effect */
 }
+
 
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .subscription input,
   .subscription button {
-    width: calc(100% - 40px); /* Full width minus padding */
-    margin-bottom: 15px; /* Reduced space for a tighter layout */
+    width: calc(100% - 60px); /* Full width minus padding on smaller screens */
   }
 }

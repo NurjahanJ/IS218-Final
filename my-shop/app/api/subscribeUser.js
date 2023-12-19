@@ -14,9 +14,10 @@ export default async (req, res) => {
 
   const AUDIENCE_ID = process.env.MAILCHIMP_AUDIENCE_ID;
   const API_KEY = process.env.MAILCHIMP_API_KEY;
-  const DATACENTER = process.env.MAILCHIMP_API_SERVER;
+  // Mailchimp API server prefix, e.g. us3, should be part of your API key
+  const DATACENTER = API_KEY.split('-').pop();
 
-  // Log the environment variables
+  // Log the environment variables (except for the API key for security)
   console.log('Using Mailchimp configuration:', { AUDIENCE_ID, DATACENTER });
 
   try {
@@ -28,7 +29,7 @@ export default async (req, res) => {
           status: 'subscribed',
         }),
         headers: {
-          Authorization: `Bearer ${API_KEY}`,
+          Authorization: `Basic ${Buffer.from(`anystring:${API_KEY}`).toString('base64')}`,
           'Content-Type': 'application/json',
         },
         method: 'POST',
@@ -58,4 +59,3 @@ export default async (req, res) => {
     return res.status(500).json({ error: error.message || error.toString() });
   }
 };
-

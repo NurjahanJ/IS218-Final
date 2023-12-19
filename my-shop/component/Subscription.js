@@ -1,48 +1,52 @@
-import { useState } from 'react';
-import { Input, Button } from "@nextui-org/react";
-import '../styles/subscription.css';
+import React, { useState } from 'react';
+import MailchimpSubscribe from 'react-mailchimp-subscribe';
+import '../styles/Subscription.css'
 
-export default function Subscription() {
+const Subscription = () => {
   const [email, setEmail] = useState('');
-  const [loading, setLoading] = useState(false);
+  const postUrl = "https://njit.us11.list-manage.com/subscribe/post?u=513a64c501b8124cdf92be285&amp;id=514b272844&amp;f_id=008ba7e0f0"; // Replace with your Mailchimp post URL
 
-  const subscribe = async (e) => {
-    e.preventDefault(); // Prevent default form submission behavior
-    setLoading(true);
+  // Custom Form Component
+  const CustomForm = ({ status, message, onValidated }) => {
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      email && email.indexOf("@") > -1 && onValidated({ EMAIL: email });
+    };
 
-    try {
-      const res = await fetch('/api/subscribeUser', {
-        body: JSON.stringify({ email }),
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        method: 'POST',
-      });
-
-      const data = await res.json();
-      if (res.ok) {
-        // Handle the success state
-        alert('Thank you for subscribing!');
-        setEmail(''); // Clear the input
-      } else {
-        // Handle the error state
-        alert(`Error: ${data.error}`);
-      }
-    } catch (error) {
-      // Handle the exception
-      alert('An error occurred. Please try again.');
-    } finally {
-      setLoading(false);
-    }
+    return (
+      <div className="subscription">
+        <h2>Unlock 15% off only this month when signing up</h2>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Email"
+            className="subscription-input"
+          />
+          <button type="submit" className="subscription-button">
+            Subscribe
+          </button>
+          {status === "sending" && <div>Sending...</div>}
+          {status === "error" && <div dangerouslySetInnerHTML={{ __html: message }} />}
+          {status === "success" && <div>Thank you for subscribing!</div>}
+        </form>
+      </div>
+    );
   };
 
   return (
-    <div className="subscription">
-      <h2>Unlock 15% off only this month when signing up</h2>
-      <form onSubmit={subscribe}>
-        <Input placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} disabled={loading} />
-        <Button type="submit" disabled={loading}>{loading ? 'Subscribing...' : 'Subscribe'}</Button>
-      </form>
-    </div>
+    <MailchimpSubscribe
+      url={postUrl}
+      render={({ subscribe, status, message }) => (
+        <CustomForm
+          status={status}
+          message={message}
+          onValidated={formData => subscribe(formData)}
+        />
+      )}
+    />
   );
-}
+};
+
+export default Subscription;
