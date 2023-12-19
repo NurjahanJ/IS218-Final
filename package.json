@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "isomorphic-unfetch": "^4.0.2",
+    "react-mailchimp-subscribe": "^2.1.3"
+  }
+}
