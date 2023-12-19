@@ -21,11 +21,11 @@
   margin-bottom: 20px; /* Space below the input field */
   width: 80%; /* Responsive width */
   max-width: 400px; /* Maximum width of the input field */
-  border-radius: 30px; /* Rounded corners for the input field */
-  color: #333; /* Text color for the input */
+  border-radius: 12px; /* Rounded corners for the input field */
+  color: #E2725B; /* Text color for the input */
   box-shadow: none; /* Removes any shadow */
   outline: none; /* Removes the outline when the input is focused */
-  background-color:#E2725B;
+  background-color:#E2725B1A;
 }
 
 .subscription button {
@@ -33,7 +33,7 @@
   background-color: #00808026; /* Yellow background color for the button */
   color: #008080; /* White text color for the button */
   border: none; /* Remove border */
-  border-radius: 30px; /* Rounded corners for the button */
+  border-radius: 12px; /* Rounded corners for the button */
   font-weight: bold; /* Bold button text */
   box-shadow: none; /* Remove any default shadow */
   cursor: pointer; /* Cursor to pointer to indicate clickable */

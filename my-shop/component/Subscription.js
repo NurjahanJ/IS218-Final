@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
-import '../styles/Subscription.css'
+import '../styles/subscription.css'
 
 const Subscription = () => {
   const [email, setEmail] = useState('');
