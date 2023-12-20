@@ -5,3 +5,4 @@
 # [Figma Design](https://www.figma.com/file/PC0UK2XZ1Gp9Kswwpecyxw/Final-Project-IS218?type=design&node-id=0%3A1&mode=design&t=NMWtOV7UinaDEvDt-1)
 # [Vercel](https://wander-glow.vercel.app/)
 # [Usability Testing Report](https://docs.google.com/document/d/1u6E2BcCYwofgBWtSQHR0Fw3XidjWvu737bRnAb1spDk/edit?usp=sharing)
+# [Presentation](https://docs.google.com/presentation/d/1dbrYscegupJ09Zn44_QuLVS1bKjHSGVNT2kqyIpJmHE/edit?usp=sharing)
